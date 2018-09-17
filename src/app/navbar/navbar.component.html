@@ -1,0 +1,17 @@
+<div class="fixed-header">
+  <mat-toolbar fixed-top class="mat-elevation-z21" color="primary">
+   <span class="fill-remaining-space"></span>
+    <span>
+        <button mat-button>Main</button>
+        <button mat-button>Experience</button>
+        <button mat-button [matMenuTriggerFor]="menu">Projects</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Project 1</button>
+          <button mat-menu-item>Project 2</button>
+        </mat-menu>
+        <button mat-button>About</button>
+        <button mat-button>Contact</button>
+    </span>
+    <span class="fill-remaining-space"></span>
+  </mat-toolbar>
+</div>
