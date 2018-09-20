@@ -1,0 +1,31 @@
+table {
+  width: 50%;
+}
+
+.mat-table {
+  display: table;
+  width: 60%;
+
+}
+.skill-cell {
+  width:20%;
+  word-wrap:break-word;
+}
+
+
+.ability-chart{
+  padding-top: 5px;
+  width: 95%;
+  float:left;
+}
+
+.ability-value{
+  width: 5%;
+  float:right;
+}
+
+
+.info-card{
+  max-width: 75vw;
+  elevation: 100deg;
+}

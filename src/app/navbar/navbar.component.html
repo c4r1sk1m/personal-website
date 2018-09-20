@@ -1,17 +1,45 @@
-<div class="fixed-header">
-  <mat-toolbar fixed-top class="mat-elevation-z21" color="primary">
-   <span class="fill-remaining-space"></span>
-    <span>
-        <button mat-button>Main</button>
-        <button mat-button>Experience</button>
-        <button mat-button [matMenuTriggerFor]="menu">Projects</button>
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item>Project 1</button>
-          <button mat-menu-item>Project 2</button>
-        </mat-menu>
-        <button mat-button>About</button>
-        <button mat-button>Contact</button>
-    </span>
-    <span class="fill-remaining-space"></span>
-  </mat-toolbar>
+<div class ="hide-mobile">
+  <div class="fixed-header">
+    <mat-toolbar fixed-top class="mat-elevation-z24" color="primary">
+      <span class="fill-remaining-space"></span>
+        <div align="center">
+          <button mat-button pageScroll routerLink="/home" href="#main"><mat-icon>home</mat-icon><div class="icon-buttons">Main</div></button>
+          <button mat-button pageScroll routerLink="/home" href="#skills"><mat-icon>build</mat-icon> <div class="icon-buttons">Skills</div></button>
+          <button mat-button pageScroll routerLink="/home" href="#experience"><mat-icon>domain</mat-icon><div class="icon-buttons">Experience</div></button>
+          <button mat-button pageScroll routerLink="/projects"><mat-icon>perm_media</mat-icon><div class="icon-buttons">Projects</div></button>
+          <!--<button mat-button [matMenuTriggerFor]="menu"><mat-icon>perm_media</mat-icon><div class="icon-buttons">Projects</div></buttn>-->
+          <!--<mat-menu #menu="matMenu">-->
+            <!--<button mat-menu-item>Project 1</button>-->
+            <!--<button mat-menu-item>Project 2</button>-->
+          <!--</mat-menu>-->
+          <button mat-button pageScroll routerLink="/home" href="#about"><mat-icon>info</mat-icon><div class="icon-buttons">About</div></button>
+          <button mat-button pageScroll routerLink="/home" href="#contact"><mat-icon>contact_phone</mat-icon><div class="icon-buttons">Contact</div></button>
+        </div>
+      <span class="fill-remaining-space"></span>
+    </mat-toolbar>
+  </div>
 </div>
+
+
+<div class="show-mobile">
+  <div class="fixed-header">
+    <mat-toolbar fixed-top class="mat-elevation-z24" color="primary">
+      <!--<span class="fill-remaining-space"></span>-->
+      <span>
+        <button mat-icon-button [matMenuTriggerFor]="mobileMenu">
+          <mat-icon>dehaze</mat-icon>
+        </button>
+        <mat-menu #mobileMenu="matMenu">
+          <button mat-button pageScroll routerLink="/home" href="#main">Main</button>
+          <button mat-button pageScroll routerLink="/home" href="#skills">Skills</button>
+          <button mat-button pageScroll routerLink="/home" href="#experience">Experience</button>
+          <button mat-button pageScroll routerLink="/home" href="#about">About</button>
+          <button mat-button pageScroll routerLink="/home" href="#contact">Contact</button>
+        </mat-menu>
+    </span>
+      <!--<span class="fill-remaining-space"></span>-->
+    </mat-toolbar>
+  </div>
+</div>
+
+

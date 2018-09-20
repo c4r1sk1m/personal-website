@@ -1,3 +1,20 @@
 .info-box{
-  padding-top: 4rem;
+  padding-top: 20vh;
+  height: 100vh;
+
+  position: center;
+  background-color: #3f96b5;
+}
+
+.avatar {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 100%;
+  border-color: #3f96b5;
+  border-width: 10px;
+}
+
+.info-card{
+  max-width: 75vw;
+  elevation: 25deg;
 }

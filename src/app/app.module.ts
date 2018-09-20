@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgxPageScrollModule} from 'ngx-page-scroll';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 // import './polyfills';
 
 
@@ -54,12 +56,28 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AppMaterialModule} from './app-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { BasicInfoComponent } from './basic-info/basic-info.component';
+import { ExperienceInfoComponent } from './experience-info/experience-info.component';
+import { ProjectsInfoComponent } from './projects-info/projects-info.component';
+import { AboutInfoComponent } from './about-info/about-info.component';
+import { ContactInfoComponent } from './contact-info/contact-info.component';
+import { SkillsInfoComponent } from './skills-info/skills-info.component';
+import { SkillTableComponent } from './skill-table/skill-table.component';
+import { ContentsComponent } from './contents/contents.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    BasicInfoComponent
+    BasicInfoComponent,
+    ExperienceInfoComponent,
+    ProjectsInfoComponent,
+    AboutInfoComponent,
+    ContactInfoComponent,
+    SkillsInfoComponent,
+    SkillTableComponent,
+    ContentsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -69,8 +87,14 @@ import { BasicInfoComponent } from './basic-info/basic-info.component';
     ReactiveFormsModule,
     AppMaterialModule,
     AppRoutingModule,
+    NgbModule,
+    NgxPageScrollModule,
+    MDBBootstrapModule.forRoot()
 
   ],
+  // exports: [
+  //   NgbModule
+  // ],
   providers: [],
   bootstrap: [AppComponent]
 })

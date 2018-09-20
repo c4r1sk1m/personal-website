@@ -1,0 +1,42 @@
+<div class="info-box" align="center" id="contact">
+  <mat-card class="contact-container">
+    <h2>Contact Information</h2>
+    <div class="info-container">
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Email
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>chrisk0208@gmail.com</p>
+        </mat-expansion-panel>
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Phone Number
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>(703) 870-5495</p>
+      </mat-expansion-panel>
+
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Address
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>1096 Amboy Ave. Edison, NJ 08837</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+    </div>
+
+
+
+  </mat-card>
+</div>
