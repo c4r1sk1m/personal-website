@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 // import './polyfills';
 
 
@@ -64,6 +65,8 @@ import { SkillsInfoComponent } from './skills-info/skills-info.component';
 import { SkillTableComponent } from './skill-table/skill-table.component';
 import { ContentsComponent } from './contents/contents.component';
 import { HomeComponent } from './home/home.component';
+import { ExpTimelineComponent } from './exp-timeline/exp-timeline.component';
+import { ContactCardComponent } from './contact-card/contact-card.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +80,9 @@ import { HomeComponent } from './home/home.component';
     SkillsInfoComponent,
     SkillTableComponent,
     ContentsComponent,
-    HomeComponent
+    HomeComponent,
+    ExpTimelineComponent,
+    ContactCardComponent
   ],
   imports: [
     BrowserModule,

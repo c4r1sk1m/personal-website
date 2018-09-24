@@ -1,9 +1,16 @@
 .info-box{
-  padding-top: 20vh;
+  padding-top: 25vh;
   height: 100vh;
 
   position: center;
   background-color: #3f96b5;
+}
+
+
+@media (max-width: 640px){
+  .info-box{
+    padding-top: 15vh;
+  }
 }
 
 .avatar {
@@ -17,4 +24,23 @@
 .info-card{
   max-width: 75vw;
   elevation: 25deg;
+  background-color: #3f96b5;
+  /*max-height: 75vh;*/
+}
+
+.Row
+{
+  display: table;
+  /*table-layout: fixed; !*Optional*!*/
+  border-spacing: 10px; /*Optional*/
+}
+.Column
+{
+  display: table-cell;
+}
+
+
+.resume-download{
+  color: black;
+  text-decoration: underline;
 }
