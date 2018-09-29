@@ -2,6 +2,18 @@
   flex: 1 1 auto;
 }
 
+.button-text{
+  vertical-align: bottom;
+  display: block;
+  line-height: 1rem;
+
+}
+.button-icon{
+  vertical-align: top;
+}
+
+
+
 .fixed-header {
   position: fixed;
   top: 0;
@@ -9,6 +21,10 @@
   z-index: 2;
   width: 100%  !important;
 
+}
+
+.mat-button-focus-overlay{
+  height: 5px;
 }
 
 
