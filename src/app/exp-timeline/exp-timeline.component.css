@@ -189,5 +189,20 @@ body {
   .timeline-article p span.article-number {
     display: none;
   }
+  .meta-date {
+    position: static;
+    top: 0;
+    left: 50%;
+    width: 100px;
+    heigh: 20px;
+
+    color: #fff;
+    border-radius: 0;
+    background: #79b6cb;
+
+    display: inline-block;
+
+  }
+
 
 }
