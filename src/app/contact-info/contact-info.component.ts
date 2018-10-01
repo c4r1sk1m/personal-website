@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ContactInfoComponent implements OnInit {
   panelOpenState = true;
 
+  panelOpenState = false;
+
   constructor() { }
 
   ngOnInit() {

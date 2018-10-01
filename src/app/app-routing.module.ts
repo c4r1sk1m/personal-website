@@ -14,9 +14,9 @@ const routes: Routes = [
   // {path: 'contact', component: ContactInfoComponent},
   // {path: 'experience', component: ExperienceInfoComponent},
   {path: 'projects', component: ProjectsInfoComponent},
-  {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
   // {path: 'skills', component: SkillsInfoComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'}
+  {path: '', redirectTo: '/', pathMatch: 'full'}
 ];
 
 

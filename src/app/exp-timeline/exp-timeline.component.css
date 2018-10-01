@@ -184,7 +184,7 @@ body {
 }
 @media only screen and (max-width: 400px) {
   .timeline-article p {
-    margin: 0;
+    /*margin: 0;*/
   }
   .timeline-article p span.article-number {
     display: none;
