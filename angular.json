@@ -20,7 +20,9 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/index.php",
+              "src/.git"
             ],
             "styles": [
               "node_modules/font-awesome/scss/font-awesome.scss",
@@ -89,7 +91,10 @@
             ],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/index.php",
+              "src/.git"
+
             ]
           }
         },

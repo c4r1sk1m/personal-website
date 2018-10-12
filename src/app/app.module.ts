@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -68,6 +69,7 @@ import { HomeComponent } from './home/home.component';
 import { ExpTimelineComponent } from './exp-timeline/exp-timeline.component';
 import { ContactCardComponent } from './contact-card/contact-card.component';
 import { ProjectShowcaseComponent } from './project-showcase/project-showcase.component';
+import {Ng2CarouselamosModule} from 'ng2-carouselamos';
 
 @NgModule({
   declarations: [
@@ -96,7 +98,8 @@ import { ProjectShowcaseComponent } from './project-showcase/project-showcase.co
     AppRoutingModule,
     NgbModule,
     NgxPageScrollModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    Ng2CarouselamosModule,
 
   ],
   // exports: [

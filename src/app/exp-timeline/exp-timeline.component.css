@@ -46,7 +46,7 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  margin: 20px 0;
+  margin: 0px 0;
 }
 .timeline-article .content-left-container,
 .timeline-article .content-right-container {
@@ -72,7 +72,7 @@ body {
   border-radius: 10px;
 }
 .timeline-article p {
-  margin: 0 0 0 60px;
+  margin: 0 0 0 0px;
   padding: 0;
   font-weight: 400;
   color: #242424;
@@ -110,6 +110,20 @@ body {
   content: "\f0d9";
   left: -8px;
 }
+
+.timeline-article .vertical-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 100vh;
+  margin-left: -5px;
+  color: #fff;
+  /*border-radius: 100%;*/
+  background: #79b6cb;
+  z-index: 0;
+}
+
 .timeline-article .meta-date {
   position: absolute;
   top: 0;
@@ -120,20 +134,24 @@ body {
   color: #fff;
   border-radius: 100%;
   background: #79b6cb;
+  z-index: 1;
 }
 .timeline-article .meta-date .date,
 .timeline-article .meta-date .month {
   display: block;
   text-align: center;
   font-weight: 900;
+  z-index: 1
 }
 .timeline-article .meta-date .date {
   font-size: 30px;
   line-height: 40px;
+  z-index: 1;
 }
 .timeline-article .meta-date .month {
   font-size: 18px;
   line-height: 10px;
+  z-index: 1;
 }
 /*===== // Vertical Timeline =====*/
 
@@ -147,11 +165,26 @@ body {
     margin-left: 0;
     left: 50px;
   }
+
+  .timeline-article{
+       margin: 20px 0;
+  }
+
   .timeline-article .meta-date {
     margin-top: 10px;
     margin-left: 0;
     left: 20px;
     background: #3f96b5;
+    z-index: 1
+  }
+  .timeline-article p {
+    margin: 0 0 0 60px;
+    padding: 0;
+    font-weight: 400;
+    color: #242424;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
   }
   .timeline-article .content-left-container,
   .timeline-article .content-right-container {
@@ -162,7 +195,10 @@ body {
     min-height: 53px;
   }
   .timeline-article .content-left-container {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+  }
+  .timeline-article .content-right-container {
+    margin-bottom: 0px;
   }
   .timeline-article .content-left,
   .timeline-article .content-right {
@@ -181,13 +217,31 @@ body {
     right: auto;
     left: -8px;
   }
+  .timeline-article .vertical-line {
+    visibility: hidden;
+  }
 }
 @media only screen and (max-width: 400px) {
   .timeline-article p {
     /*margin: 0;*/
   }
+  .timeline-article{
+    margin: 20px 0;
+  }
   .timeline-article p span.article-number {
     display: none;
+  }
+  .timeline-article p {
+    margin: 0 0 0 60px;
+    padding: 0;
+    font-weight: 400;
+    color: #242424;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+  }
+  .timeline-article .vertical-line {
+    visibility: hidden;
   }
   .meta-date {
     position: static;
@@ -195,6 +249,7 @@ body {
     left: 50%;
     width: 100px;
     heigh: 20px;
+    z-index: 1;
 
     color: #fff;
     border-radius: 0;
