@@ -123,7 +123,7 @@ body {
   background: #79b6cb;
   z-index: 0;
 }
-
+/*================DATE=====================*/
 .timeline-article .meta-date {
   position: absolute;
   top: 0;
@@ -153,6 +153,15 @@ body {
   line-height: 10px;
   z-index: 1;
 }
+/*TEST Start*/
+
+
+
+
+
+
+/*TEST End*/
+
 /*===== // Vertical Timeline =====*/
 
 /*===== Resonsive Vertical Timeline =====*/
@@ -171,20 +180,35 @@ body {
   }
 
   .timeline-article .meta-date {
+    top: 25%;
     margin-top: 10px;
     margin-left: 0;
-    left: 20px;
+    left: 5px;
     background: #3f96b5;
-    z-index: 1
+    z-index: 1;
+    transform: rotate(-90deg);
+    border-radius: 0%;
+    width: 62px;
+    height: 31px;
+  }
+  .timeline-article .meta-date .date,
+  .timeline-article .meta-date .month {
+    display: inline;
   }
   .timeline-article p {
-    margin: 0 0 0 60px;
+    margin: 0 0 0 31px;
     padding: 0;
     font-weight: 400;
     color: #242424;
     font-size: 14px;
     line-height: 24px;
     position: relative;
+  }
+  .timeline-article .content-left:before {
+    visibility: hidden;
+  }
+  .timeline-article .content-right:before {
+    visibility: hidden;
   }
   .timeline-article .content-left-container,
   .timeline-article .content-right-container {
@@ -232,7 +256,7 @@ body {
     display: none;
   }
   .timeline-article p {
-    margin: 0 0 0 60px;
+    margin: 0 0 0 31px;
     padding: 0;
     font-weight: 400;
     color: #242424;
@@ -256,7 +280,6 @@ body {
     background: #79b6cb;
 
     display: inline-block;
-
   }
 
 
