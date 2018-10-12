@@ -67,6 +67,7 @@ import { ContentsComponent } from './contents/contents.component';
 import { HomeComponent } from './home/home.component';
 import { ExpTimelineComponent } from './exp-timeline/exp-timeline.component';
 import { ContactCardComponent } from './contact-card/contact-card.component';
+import { ProjectShowcaseComponent } from './project-showcase/project-showcase.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import { ContactCardComponent } from './contact-card/contact-card.component';
     ContentsComponent,
     HomeComponent,
     ExpTimelineComponent,
-    ContactCardComponent
+    ContactCardComponent,
+    ProjectShowcaseComponent
   ],
   imports: [
     BrowserModule,
