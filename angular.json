@@ -22,7 +22,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/index.php",
-              "src/.git"
+//              "src/.git"
             ],
             "styles": [
               "node_modules/font-awesome/scss/font-awesome.scss",
@@ -93,7 +93,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/index.php",
-              "src/.git"
+//              "src/.git"
 
             ]
           }
