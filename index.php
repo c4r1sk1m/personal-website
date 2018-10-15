@@ -1,1 +1,1 @@
-<?php header( 'Location: /dist/chris-kim-webpage/index.php' ) ;  ?>
+<?php header( 'Location: /dist/chris-kim-webpage/index.html' ) ;  ?>
