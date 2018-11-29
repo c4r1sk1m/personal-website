@@ -10,6 +10,7 @@
   max-width: 75vw;
 }
 
+
 @media (max-width: 600px){
   .skills-card{
     max-width: 100vw;

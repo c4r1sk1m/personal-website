@@ -7,6 +7,7 @@ import { ExperienceInfoComponent } from './experience-info/experience-info.compo
 import { ProjectsInfoComponent } from './projects-info/projects-info.component';
 import { SkillsInfoComponent} from './skills-info/skills-info.component';
 import { HomeComponent} from './home/home.component';
+import {AnimationComponent} from './animation/animation.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'projects', component: ProjectsInfoComponent},
   {path: '', component: HomeComponent},
   // {path: 'skills', component: SkillsInfoComponent},
+  {path: '', component: AnimationComponent},
   {path: '', redirectTo: '/', pathMatch: 'full'}
 ];
 

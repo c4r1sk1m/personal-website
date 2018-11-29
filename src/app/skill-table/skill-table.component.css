@@ -28,6 +28,16 @@ table {
   elevation: 100deg;
 }
 
+.logos{
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*display: block;*/
+  /*margin: auto;*/
+  display: flex;
+  justify-content: center;
+}
+
+
 @media (max-width: 600px){
   .info-card{
     max-width: 100vw;

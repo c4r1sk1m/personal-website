@@ -70,6 +70,7 @@ import { ExpTimelineComponent } from './exp-timeline/exp-timeline.component';
 import { ContactCardComponent } from './contact-card/contact-card.component';
 import { ProjectShowcaseComponent } from './project-showcase/project-showcase.component';
 import {Ng2CarouselamosModule} from 'ng2-carouselamos';
+import { AnimationComponent } from './animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import {Ng2CarouselamosModule} from 'ng2-carouselamos';
     HomeComponent,
     ExpTimelineComponent,
     ContactCardComponent,
-    ProjectShowcaseComponent
+    ProjectShowcaseComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,
